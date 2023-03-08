@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Tilt+Neon&display=swap');
+
+:root{
+    --ez-bg-color: #0A0A0A;
+    --ez-color: #FFFCF2;    
+}
+
+*{
+    font-family: Source Code Pro;
+}
+
+html, body{
+    background-color: var(--ez-bg-color);
+    color: var(--ez-color);
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+button{
+    border: .1em var(--ez-color) solid;
+    background-color: var(--ez-bg-color);
+    color: var(--ez-color);    
+    font-size:.8em;
+    padding: .5em;
+}
+
+.card {
+    border: 0.1em solid var(--ez-color);
+    padding: .5em;
+}
+
+.card-header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+}
+.card-body{
+    width: 100%;
+}
+
+.form-label{
+    
+}
+.form-control{
+    border: 0;
+    height: 1rem;
+    width:100%;
+}
+
+.form-check-input{
+}

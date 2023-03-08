@@ -3,8 +3,11 @@
 	import { handleSession } from '@lucia-auth/sveltekit/client';
 
 	import '../app.css';
+	import 'bootstrap/dist/css/bootstrap-grid.css';
 
 	handleSession(page);
 </script>
 
-<slot />
+<div class="container">
+	<slot />
+</div>

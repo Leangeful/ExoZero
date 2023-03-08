@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import SignIn from '$lib/components/SignIn.svelte';
+</script>
+
+<h1>ExoZero</h1>
+
+<!--TODO remove signin form when logged in and display logout button-->
+
+<SignIn />
