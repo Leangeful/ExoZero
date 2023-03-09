@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import SignIn from '$lib/components/SignIn.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
-<h1>ExoZero</h1>
-
-<!--TODO remove signin form when logged in and display logout button-->
-
-<SignIn />
+{#if !data.user}
+	<SignIn />
+{/if}

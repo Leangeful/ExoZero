@@ -5,7 +5,15 @@ import { prismaClient } from './prisma';
 
 export const auth = lucia({
 	adapter: prisma(prismaClient),
-	env: dev ? 'DEV' : 'PROD'
+	env: dev ? 'DEV' : 'PROD',
+	transformUserData: (userData) => {
+		return {
+			userId: userData.id,
+			email: userData.email,
+			role: userData.role,
+			username: userData.username
+		};
+	}
 });
 
 export type Auth = typeof auth;

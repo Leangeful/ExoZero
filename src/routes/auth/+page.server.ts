@@ -26,8 +26,6 @@ export const actions: Actions = {
 		const remember = form.remember as string;
 	}, */
 	GSignIn: async ({ cookies }) => {
-		console.log('GSignIn');
-
 		const [authUrl, state] = await googleAuth.getAuthorizationUrl();
 
 		cookies.set('authState', state, {
@@ -35,7 +33,8 @@ export const actions: Actions = {
 			httpOnly: true,
 			maxAge: 60 * 60
 		});
-
+		console.log(authUrl, state);
+		console.log(cookies.getAll());
 		throw redirect(303, authUrl.toString());
 	},
 	LogOut: async ({ locals }) => {
