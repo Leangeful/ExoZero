@@ -39,5 +39,9 @@
 		"@lucia-auth/oauth": "^0.6.3",
 		"@lucia-auth/sveltekit": "^0.6.9",		
 		"lucia-auth": "^0.8.0"
+	},
+	"type": "module",
+	"dependencies": {
+		
 	}
 }
