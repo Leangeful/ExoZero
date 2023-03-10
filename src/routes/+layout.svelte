@@ -11,22 +11,17 @@
 
 <div class="container">
 	<nav>
-		<div class="container-fluid">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/blah">Blah</a></li>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blah">Blah</a></li>
 
-				{#if $user}
-					<form class="logout" method="post">
-						<button class="logout" formaction="/auth?/LogOut">Logout</button>
-					</form>
-				{/if}
-			</ul>
-		</div>
+			{#if $user}
+				<form class="logout" method="post">
+					<button class="logout" formaction="/auth?/LogOut">Logout</button>
+				</form>
+			{/if}
+		</ul>
 	</nav>
-	{#if $user}
-		<p>Hello, {$user?.username}</p>
-	{/if}
 	<slot />
 </div>
 
@@ -45,5 +40,16 @@
 	}
 	a:visited {
 		color: var(--ez-color);
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.container {
+		padding: 0%;
+	}
+	ul {
+		padding: 0%;
 	}
 </style>

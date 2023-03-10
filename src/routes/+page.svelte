@@ -8,17 +8,43 @@
 {#if !data.user}
 	<SignIn />
 {:else}
-	<div class="disp col-sm-12">
-		<img src="/ufo.png" alt="ufo wireframe" />
+	<div class="grid">
+		<div class="row">
+			<div class="disp col-sm-4">
+				<img src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+			<div class="disp col-sm-4">
+				<img class="filtered" src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+			<div class="disp col-sm-4">
+				<img src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="disp col-sm-4">
+				<img src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+			<div class="disp col-sm-4">
+				<img src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+			<div class="disp col-sm-4">
+				<img class="filtered" src="/ufo_alpha2.png" alt="ufo wireframe" />
+			</div>
+		</div>
 	</div>
 {/if}
 
 <style>
 	img {
-		height: auto;
 		width: 100%;
-		border: 0.1em solid var(--ez-color);
+		height: auto;
 	}
 	.disp {
+		height: auto;
+		border: 0.1rem solid var(--ez-color);
+	}
+
+	.filtered {
+		filter: sepia() hue-rotate(180deg) saturate(2000%);
 	}
 </style>

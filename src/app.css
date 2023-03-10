@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Tilt+Neon&display=swap');
 
 :root{
-    --ez-bg-color: #0A0A0A;
+    --ez-bg-color: #0b0b0b;
     --ez-color: #FFFCF2;    
 }
 
@@ -19,11 +19,12 @@ html, body{
 }
 
 button{
-    border: .1em var(--ez-color) solid;
+    border: .1rem var(--ez-color) solid;
     background-color: var(--ez-bg-color);
     color: var(--ez-color);    
-    font-size:.8em;
-    padding: .5em;
+    font-size:1em;
+    padding: .1em;
+    margin-right: -.1em;
 }
 
 .card {
