@@ -1,3 +1,5 @@
+//https://github.com/solidjs/solid-start/issues/398
+
 import type { PrismaClient as ImportedPrismaClient } from '@prisma/client';
 import { createRequire } from 'module';
 
